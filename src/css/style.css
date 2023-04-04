@@ -138,6 +138,10 @@ body {
     align-items: center;
 }
 
+#close {
+    display: none;
+}
+
 /* Home page */
 #hero {
     background-image: url("../images/hero4.png");
@@ -350,7 +354,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-image: url("../images/banner/b17.jpg");
-    min-width: 800px;
+    min-width: 580px;
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -585,5 +589,14 @@ footer .copyright img {
         color: #1a1a1a;
         font-size: 24px;
         padding-left: 20px;
+    }
+
+    #close {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
     }
 }

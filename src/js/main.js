@@ -1,6 +1,7 @@
 // Hamburger menu
 
 const bar = document.getElementById('bar');
+const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
 
 
@@ -8,6 +9,13 @@ const nav = document.getElementById('navbar');
 
 if (bar) {
     bar.addEventListener('click', () => {
-        nav.classList.add('active');
+        nav.classList.add('active');       
+    })
+}
+
+//  Adding if statement for close button, from 0px to -300px when user clicks
+if (close) {
+    close.addEventListener('click', () => {
+        nav.classList.remove('active'); 
     })
 }
