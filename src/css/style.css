@@ -723,6 +723,42 @@ footer .copyright img {
     z-index: -1;
 }
 
+/* about page section */
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#page-header.about-header {
+    background-image: url("../images/about/banner.png");
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 /* Medias Query`s */
 
 @media (max-width: 799px){
@@ -927,4 +963,25 @@ footer .copyright img {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    /* about page */
+
+    #about-head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
+
 }
