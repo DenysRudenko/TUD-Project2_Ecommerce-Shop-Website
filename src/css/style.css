@@ -11,12 +11,17 @@
     width: 10px;
 }
 
+.hide {
+    display: none;
+}
+
 /* track */
 ::-webkit-scrollbar {
     box-shadow: inset 0 0 5px black;
     border-radius: 10px;
     background-color: #3a3a3a;
 }
+
 
 ::-webkit-scrollbar-thumb {
     background: rgb(187, 161, 79, .3);
@@ -688,6 +693,7 @@ footer .copyright img {
 
 #page-header.blog-header {
     background-image: url(../images/banner/blog19.jpg);
+    background-size: 100% 200%;
 }
 
 #blog {
@@ -778,7 +784,7 @@ footer .copyright img {
 
 #page-header.about-header {
     background-image: url("../images/about/banner.jpg");
-     
+     background-size: 100% 200%;
 }
 
 #about-app {
@@ -909,6 +915,26 @@ footer .copyright img {
 }
 
 /* cart page */
+
+.fa-circle-minus {
+    padding-right: 15px;
+    font-size: 20px;
+    color: #088178;
+    cursor: pointer;
+}
+
+.fa-circle-plus {
+    padding-left: 15px;
+    font-size: 20px;
+    color: #088178;
+    cursor: pointer;
+}
+
+.fa-trash {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
 
 #cart {
     overflow-x: auto;
@@ -1128,6 +1154,10 @@ footer .copyright img {
     #form-details form {
         width: 50%;
     }
+
+    #page-header.about-header {
+        background-size: cover;
+    }
 }
 
 @media (max-width: 477px){
@@ -1214,6 +1244,10 @@ footer .copyright img {
     }
     
     /* blog section */
+
+    #page-header.blog-header {
+        background-size: cover;
+    }
 
     #blog {
         padding: 100px 20px 0 20px;

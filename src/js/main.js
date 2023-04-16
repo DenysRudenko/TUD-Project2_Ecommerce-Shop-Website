@@ -7,8 +7,8 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
     {
         name: 'Men`s Fashion T-Shirt',
-        tag: 'fashiontshirt',
-        price: 15,
+        tag: 'fashiontshirt1',
+        price: 118.19,
         inCart: 0
     },
     {
@@ -93,8 +93,99 @@ function totalCost(product) {
     
 }
 
-onLoadCartNumbers();
+function displayCart() {
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    
+    let productContainer = document.querySelector("#cart");
+    let cartCost = localStorage.getItem("totalCost");
 
+    console.log(cartItems)
+    if (cartItems && productContainer) {
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
+           
+            <section class="section-p1" id="cart">
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Remove</td>
+                            <td>Image</td>
+                            <td>Product</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Subtotal</td>
+                        </tr>
+                    </thead>
+    
+            <tbody class="cart-content">
+                <tr class="cart-box">
+                    <td><a onclick="removeCartItem(this)" href="#"><i class="fa-solid fa-trash cart-remove"></i></a></td>
+                    <td><img src="../images/products/${item.tag}.jpg"></td>
+                    <td>${item.name}</td>
+                    <td class="price cart-price">$ ${item.price}</td>
+                    <td><input class="cart-quantity csl" type="number" min="0" max="100" value="${item.inCart}"></td>
+                    <td class="total">$ ${item.inCart * item.price}</td>
+                </tr>
+            `
+        });
+
+        productContainer.innerHTML += `
+                <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Card Subtotal</td>
+                    <td>$ ${cartCost}</td>
+                </tr>
+
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong id="3" class="total-price">$ ${cartCost}</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+        `
+    }
+}
+
+function findall() {
+  var array = document.querySelectorAll('.cls');
+  var total = 0;
+  for (var i = 0; i < array.length; i++) {
+    if (parseInt(array[i].value))
+      total += parseInt(array[i].value);
+  }
+  document.getElementById('3').value = total;
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.parentNode.parentNode;
+    buttonClicked.parentNode.removeChild(buttonClicked);
+    updatetotal();
+}
+
+
+onLoadCartNumbers();
+displayCart();
 // Adding if statement, if user click on hamburger menu 'right' pixels would change from -300px to 0px 
 
 if (bar) {
