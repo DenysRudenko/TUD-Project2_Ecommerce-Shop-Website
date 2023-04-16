@@ -6,16 +6,24 @@ const nav = document.getElementById('navbar');
 let carts = document.querySelectorAll('.add-cart');
 let products = [
     {
-        name: 'Mens Fashion T-Shirt',
+        name: 'Men`s Fashion T-Shirt',
         tag: 'fashiontshirt',
         price: 15,
         inCart: 0
+    },
+    {
+        name: 'Womans Fashion T-Shirt',
+        tag: 'womansfashiontshirt',
+        price: 20,
+        inCart: 0
     }
-]
+];
+
 
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cartNumbers();
+        cartNumbers(products[i]);
+        totalCost(products[i]);
     });
 }
 
@@ -29,7 +37,8 @@ function onLoadCartNumbers() {
 }
 
 // Allows us to count number of times we click on item that added to cart
-function cartNumbers() {
+function cartNumbers(product) {
+    console.log("The product clicked is", product);
     let productNumbers = localStorage.getItem('cartNumbers');
     
 
@@ -43,6 +52,44 @@ function cartNumbers() {
         document.querySelector('#navbar span').textContent = 1;
     }
 
+    setItems(product);
+}
+
+function setItems(product) {
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+
+    if (cartItems != null) {
+        if (cartItems[product.tag] == undefined) {
+            cartItems = {
+                ...cartItems,
+                [product.tag]: product
+            }
+        }
+        cartItems[product.tag].inCart += 1; 
+    } else {
+        product.inCart = 1;
+        cartItems = {
+            [product.tag] : product
+        }    
+    } 
+    localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+}
+
+function totalCost(product) {
+    // console.log("The products price is", product.price);
+
+    let cartCost = localStorage.getItem("totalCost");
+    
+    console.log("My cartCost is", cartCost);
+    console.log(typeof cartCost);
+
+    if (cartCost != null) {
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price)
+    } else {
+        localStorage.setItem("totalCost", product.price);
+    }
     
 }
 
@@ -68,7 +115,7 @@ if (close) {
 var MainImg = document.getElementById("MainImg");
         var smallimg = document.getElementsByClassName("small-img");
 
-        smallimg[0].onclick = function(){
+        smallimg[0].onclick = function () {
             MainImg.src =  smallimg[0].src;
         }
 
