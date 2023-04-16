@@ -179,6 +179,7 @@ body {
 
 #hero h4{
     padding-bottom: 15px;
+    color: #472c08;
 }
 
 #hero h1 {
@@ -203,6 +204,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 #feature .fe-box {
     width: 180px;
@@ -254,6 +256,10 @@ body {
 
 #product1 {
     text-align: center;
+}
+
+#product1 h2 {
+    color: #000;
 }
 
 #product1 .pro-container {
