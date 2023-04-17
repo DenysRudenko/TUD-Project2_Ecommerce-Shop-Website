@@ -44,7 +44,7 @@ My main goal during the project was practice.
 
 <a name="wireframes"></a>
 
-## 1.6 Site Skeleton
+## 1.3 Site Skeleton
 
 [Go to the top](#table-of-contents)
 
@@ -58,11 +58,9 @@ My main goal during the project was practice.
 
 [Go to the top](#table-of-contents)
 
-- Main Page
+- Desktop pages
 
 ![animation-logo](src/images/mokflow/m1.jpg)
-
-- First page
 
 ![1st_page](src/images/mokflow/m2.jpg)
 
@@ -71,6 +69,22 @@ My main goal during the project was practice.
 ![3rd_page](src/images/mokflow/m4.jpg)
 
 ![3rd_page](src/images/mokflow/m5.jpg)
+
+- Mobile Pages
+
+![1st_page](src/images/mokflow/m6.jpg)
+
+![2nd_page](src/images/mokflow/m7.jpg)
+
+![3rd_page](src/images/mokflow/m8.jpg)
+
+![3rd_page](src/images/mokflow/m9.jpg)
+
+![1st_page](src/images/mokflow/m10.jpg)
+
+![2nd_page](src/images/mokflow/m11.jpg)
+
+![3rd_page](src/images/mokflow/m12.jpg)
 
 <a name="result"></a>
 
@@ -82,7 +96,7 @@ Website contain 1 language
 
 <a name="technologies-used"></a>
 
-# 3. Technologies Used
+# 1.4. Technologies Used
 
 [Go to the top](#table-of-contents)
 
