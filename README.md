@@ -88,9 +88,9 @@ My main goal during the project was practice.
 
 #### Wireframe:
 
-![2nd_page](src/images/mokflow/m13.jpg)
+![2nd_page](src/images/mokflow/m13.png)
 
-![3rd_page](src/images/mokflow/m14.jpg)
+![3rd_page](src/images/mokflow/m14.png)
 
 <a name="result"></a>
 
