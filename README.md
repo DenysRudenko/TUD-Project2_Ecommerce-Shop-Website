@@ -1,4 +1,4 @@
-# Welcome to ask.Js
+# Welcome to The Style
 
 This website is designed for [The Style](https://denysrudenko.github.io/TUD-Project2_Ecommerce-Shop-Website/).
 
@@ -42,47 +42,6 @@ Upgrade your wardrobe with our latest fashion arrivals! From trendy tops to styl
 
 My main goal during the project was practice.
 
-<a name="user-expectations"></a>
-
-## 1.3 User Expectations
-
-[Go to the top](#table-of-contents)
-
-The choice of the color scheme for the website I took from 'Instagram' posts.
-
-The website contains information about functions,switch construction,arrays,variables. Why do we need the version control system GIT?
-
-- all pages are easily accessible
-- the interface is easily navigated
-- responsive design for all screen/device sizes
-
-<a name="color-scheme"></a>
-
-## 1.4 Color Scheme
-
-[Go to the top](#table-of-contents)
-
-![color pallete](assets/images/color.png)
-
-The choice of the color scheme for the website I took from 'Instagram' posts.
-
-<a name="animation"></a>
-
-## 1.5 Animation
-
-[Go to the top](#table-of-contents)
-
-I decided to create a nice animation in the background, so the user doesn't feel so bored while answering the questions. I looked up for animation in google and found a list of them [here](https://alvarotrigo.com/blog/animated-backgrounds-css/).
-
-What did i do?
-
-- Created a background animation(Thank`s google for good examples)
-- Created a loading animation.
-- The boxes with questions is animated.
-- The logo is animated.
-
-![color pallete](assets/images/animation.gif)
-
 <a name="wireframes"></a>
 
 ## 1.6 Site Skeleton
@@ -99,63 +58,21 @@ What did i do?
 
 [Go to the top](#table-of-contents)
 
-- Animation logo
+- Main Page
 
-![animation-logo](assets/images/wire1.png)
+![animation-logo](src/images/mokflow/m1.jpg)
 
 - First page
 
-![1st_page](assets/images/wire2.png)
+![1st_page](src/images/mokflow/m2.jpg)
 
-- Second page
+![2nd_page](src/images/mokflow/m3.jpg)
 
-![2nd_page](assets/images/wire3.png)
+![3rd_page](src/images/mokflow/m4.jpg)
 
-- Third page
-
-![3rd_page](assets/images/wire4.png)
+![3rd_page](src/images/mokflow/m5.jpg)
 
 <a name="result"></a>
-
-## Result
-
-### Desktop
-
-- Animation
-
-![home](assets/images/1.png)
-
-- 1st page
-
-![home](assets/images/2.png)
-
-- 2nd page
-
-![home](assets/images/3.png)
-![home](assets/images/4.png)
-
-- 3rd page
-
-![home](assets/images/5.png)
-
-### Mobile
-
-- Animation
-
-![home](assets/images/mob1.png)
-
-- 1st page
-
-![home](assets/images/mob2.png)
-
-- 2nd page
-
-![home](assets/images/mob3.png)
-![home](assets/images/mob4.png)
-
-- 3rd page
-
-![home](/assets/images/mob5.png)
 
 #### Language:
 
