@@ -86,6 +86,12 @@ My main goal during the project was practice.
 
 ![3rd_page](src/images/mokflow/m12.jpg)
 
+#### Wireframe:
+
+![2nd_page](src/images/mokflow/m13.jpg)
+
+![3rd_page](src/images/mokflow/m14.jpg)
+
 <a name="result"></a>
 
 #### Language:
